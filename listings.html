@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="dataStore">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +9,10 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/listings.css" rel="stylesheet">
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </head>
-<body>
+<body ng-controller="StoreController as store">
 <nav>
   <ul id="menu">
     <a href=""><li id="menu_tab">LOGIN</li></a>
@@ -24,7 +26,7 @@
     <div id="Header_block_desc">
       <div id="Header_title">LEARN ON YOUR OWN TERMS.</div>
       <div id="header_description">This page acts as a directory for onlinr and location-based courses that you have access to. Some cost money, others are free, but thay're all well worth a look at. Looking for a particular coding language. course type, or project? Try out the search to try to filter your options.<p><p>Know a course we should include? Tell us about it.</div>
-      <form><input type="text" name="sherch_input" id="text_serch"></form>
+      <form><input type="text" name="sherch_input" id="text_serch" autofocus id="search" ng-model="query" ></form>  
     </div>
   </div>
   <div id="search_type_bar">
@@ -40,12 +42,12 @@
   </div>
   <div id="results">
 <!--Result container one -->  
-    <div class="results_container">
+    <div class="results_container" ng-repeat="material in store.materials | filter:query">
       <div id="colum_left">
         <div id="result_image">
           <div id="result_price_idea">FREE</div>
           <div id="result_image_wrapper">
-            <img src="#">
+            <img ng-src="{{material.logo.thumb}}"/>
           </div>
           <div id="downstairs">
             <div id="stars">
@@ -77,83 +79,6 @@
         </div>
       </div>
     </div>
-<!--Result container two -->
-    <div class="results_container">
-      <div id="colum_left">
-        <div id="result_image">
-          <div id="result_price_idea">$$$</div>
-          <div id="result_image_wrapper">
-            <img src="#">
-          </div>
-          <div id="downstairs">
-            <div id="stars">
-              <img class="stars" src="images/FullStar-05.png">
-              <img class="stars" src="images/FullStar-05.png">
-              <img class="stars" src="images/FullStar-05.png">
-              <img class="stars" src="images/FullStar-05.png">
-              <img class="stars" src="images/LineStar-06.png">
-            </div>
-            <div id="reviews">5 reviews <img class="arrow_reveiw" src="images/ThinArrow-07.png"></div>
-          </div>
-        </div>
-      </div>
-      <div id="colum_right">
-        <div id="upstairs_right_side">
-          <div id="love_me_hart_result"><img alt="add to favs" class="haert" src="images/LineHeart-09.png"></div>
-          <div id="result_title">ENSPIRAL DEV ACADEMY</div>
-          <div id="result_description">Corse description</div>
-        </div>
-        <div id="downstairs_left_side">
-          <div id="result_favorits">20 Favourites</div>
-          <div id="tags">
-            <div class="square_tag">Instructor led</div>
-            <div class="square_tag">Course fee</div>
-            <div class="circal_tag">Coding</div>
-            <div class="circal_tag">Wellington</div>
-            <div class="circal_tag">Web Development</div>
-          </div>
-        </div>
-      </div>
-    </div>
-<!--Result container three -->
-    <div class="results_container">
-      <div id="colum_left">
-        <div id="result_image">
-          <div id="result_price_idea">$$</div>
-          <div id="result_image_wrapper">
-            <img src="#">
-          </div>
-          <div id="downstairs">
-            <div id="stars">
-              <img class="stars" src="images/FullStar-05.png">
-              <img class="stars" src="images/FullStar-05.png">
-              <img class="stars" src="images/FullStar-05.png">
-              <img class="stars" src="images/LineStar-06.png">
-              <img class="stars" src="images/LineStar-06.png">
-            </div>
-            <div id="reviews">9999 reviews <img class="arrow_reveiw" src="images/ThinArrow-07.png"></div>
-          </div>
-        </div>
-      </div>
-      <div id="colum_right">
-        <div id="upstairs_right_side">
-          <div id="love_me_hart_result"><img alt="add to favs" class="haert" src="images/LineHeart-09.png"></div>
-          <div id="result_title">FREE SCHOOL</div>
-          <div id="result_description">Corse description</div>
-        </div>
-        <div id="downstairs_left_side">
-          <div id="result_favorits">1000 Favourites</div>
-          <div id="tags">
-            <div class="square_tag">Self-directed</div>
-            <div class="square_tag">Course fee</div>
-            <div class="circal_tag">Coding</div>
-            <div class="circal_tag">Web Development</div>
-            <div class="circal_tag">IT Systems</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <footer>
     <ul class="footer_list">
       <li class="list_bold">SUPPORTED BY</li>
