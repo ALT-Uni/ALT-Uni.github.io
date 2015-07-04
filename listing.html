@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="dataStore">
+<head>
+	<title>Learning listing.</title>
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body ng-controller="StoreController as store">
+
+ 	<script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <div class="container-fluid">
+    <br>
+	  <div class="row">
+	      <div class="col-md-offset-2 col-md-8">
+	      <!--Sidebar content-->
+		
+	      Search: <input type="text" placeholder="Filter by: course name, interest...etc" autofocus id="search" ng-model="query" size="70">
+
+	     
+
+	      </div>
+	 </div>     
+
+	 <div class="row">
+	      <div class="col-md-10">
+	        <!--Body content-->
+
+	        <ul class="materials">
+	          <li ng-repeat="material in store.materials | filter:query">
+	            <img ng-src="{{material.logo.thumb}}"/>
+	            <h4>{{material.name}}</h4>
+	            <p>{{material.description}}</p>
+	            <p>{{material.free}}</p>
+	            <p>{{material.type}}</p>
+	            <p ng-repeat="tag in material.tags">{{tag.tag}}</p>
+
+
+	            		<ul>
+							<h4>Reviews</h4>
+							<li>
+								<blockquote ng-repeat="review in material.reviews">
+									<strong>{{review.stars}} Stars </strong>
+									{{review.body}}
+									<cite class="clearfix">—{{review.author}} on {{review.createdOn | date}}</cite>
+								</blockquote>		
+							</li>
+
+						</ul>
+						 	<!--  Review Form -->
+            				<form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(material)" novalidate>
+              				<!--  Live Preview -->
+              					<blockquote>
+                				<strong>{{reviewCtrl.review.stars}} Stars</strong>
+                				{{reviewCtrl.review.body}}
+                				<cite class="clearfix">—{{reviewCtrl.review.author}}</cite>
+              					</blockquote>
+
+              					<!--  Review Form -->
+								<h4>Submit a Review</h4>
+								<fieldset class="form-group">
+									<select ng-model="reviewCtrl.review.stars" class="form-control" ng-options ="stars for stars in [5,4,3,2,1]" title="Stars" required >
+										<option vlaue="">Rate the Product</option>
+									</select>
+								</fieldset>
+								<fieldset class="form-group">
+									<textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="write a short review of the product..." title="Review" required></textarea>
+								</fieldset>
+								<fieldset class="form-group">
+									<input ng-model="reviewCtrl.review.author" type="email" class="form-control" placeholder="gaurav@example.org" title="Email" required/>
+								</fieldset>
+								<div>reviewForm is {{reviewForm.$valid}}</div>
+								<fieldset class="form-group">
+									<input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
+								</fieldset>
+							</form>
+
+
+	          </li>
+	        </ul>
+
+	      </div>
+   		</div>
+  	</div>
+
+</body>
+</html>
