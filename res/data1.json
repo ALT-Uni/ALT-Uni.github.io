@@ -499,7 +499,7 @@
         "description": "4 General courses: Information, Tech & Design",
         "free": "free",
         "type": "Self Directed Learning (MOOC)",
-        "link": "https://www.coursera.org/",
+        "link": "https://www.udacity.com/",
         "location": "online",
         "logo": {
                 "full": "http://placehold.it/100x100",
@@ -507,7 +507,7 @@
             },
             "tags": [
          {
-            "tag": "Generaal IT"
+            "tag": "General IT"
          },
          {
             "tag": "coding skills"
