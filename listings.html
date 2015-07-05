@@ -64,7 +64,9 @@
           <div id="result_upstairs{{material.id}}" class="result_upstairs">
             <div id="result_price_idea">{{material.free}} - {{material.type}}</div>
             <div id="result_image_wrapper">
-              <img ng-src="{{material.logo.thumb}}" class="thumb" />
+              <a id="result_link" ng-href="{{material.link}}">
+                <img ng-src="{{material.logo.thumb}}" class="thumb" />
+              </a>
             </div>
           </div>
             <div id="reveiw_list{{material.id}}" class="reveiw_list">
@@ -108,12 +110,12 @@
       <div id="orginal_box">
         <div id="upstairs_right_side">
           <div id="love_me_hart_result"><img alt="add to favs" class="haert" src="images/LineHeart-09.png"></div>
-          <div id="result_title"><a ng-href="{{material.link}}">{{material.name}}</a></div>
+          <div id="result_title"><a id="result_link" ng-href="{{material.link}}">{{material.name}}</a></div>
           <div id="result_description">{{material.description}}</div>
         </div>
         <div id="downstairs_left_side">
           <div id="result_favorits">25 Favourites</div>
-          <div id="tags" ng-repeat="tag in material.tags">
+          <div id="circal_tag" ng-repeat="tag in material.tags">
             <div class="circal_tag">{{tag.tag}}</div>
             <!--<div class="circal_tag">Web Development</div>
             <div class="circal_tag">IOS Development</div>-->

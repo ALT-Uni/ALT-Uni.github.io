@@ -291,7 +291,7 @@ searh results
 
 #result_description  {
 	font-size: 20px;
-	height: 148px;
+	height: 163px;
 }
 
 #downstairs_left_side {
@@ -308,6 +308,7 @@ searh results
 #tags {
 	width: 700px;
 	margin-top: 14px;
+	display: inline-block;
 }
 
 div#tags > div {
@@ -322,8 +323,16 @@ div#tags > div {
 	/*line-height: 300%;*/
 }
 
-.circal_tag {
+#circal_tag {
 	border-radius: 22px;
+	background: #666666;
+	padding: 5px;
+	padding-left: 40px;
+	padding-right: 40px;
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 17px;
+	margin-top: 10px;
 }
 
 .result_upstairs {
@@ -342,6 +351,10 @@ h4 {
 img.thumb {
 	width: 520px;
 	height: 280px; 
+}
+#result_link {
+	color: #666666;
+	text-decoration: none;
 }
 
 /*===================
