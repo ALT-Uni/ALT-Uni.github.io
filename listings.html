@@ -62,7 +62,7 @@
       <div id="colum_left">
         <div id="result_image">
           <div id="result_upstairs{{material.id}}" class="result_upstairs">
-            <div id="result_price_idea">{{material.free}}</div>
+            <div id="result_price_idea">{{material.free}} - {{material.type}}</div>
             <div id="result_image_wrapper">
               <img ng-src="{{material.logo.thumb}}" class="thumb" />
             </div>
@@ -115,11 +115,10 @@
           <div id="result_favorits">25 Favourites</div>
           <div id="tags" ng-repeat="tag in material.tags">
             <div class="circal_tag">{{tag.tag}}</div>
-            <div class="square_tag">Self-directed</div>
-            <div class="square_tag">Free</div>
             <!--<div class="circal_tag">Web Development</div>
             <div class="circal_tag">IOS Development</div>-->
           </div>
+
         </div>
         </div>
       </div>

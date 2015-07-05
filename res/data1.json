@@ -1,73 +1,140 @@
 [
     {
-        "id": "1",      
-        "name": "Yoobee School of design",
-        "description": "Yoobee School of design  about them",
+        "id" : "1",
+        "name": "Enspiral Dev",
+        "description": "Full Immersion hands-on, project-based web development",
         "free": "buy",
         "type": "Instructor led Learning",
-        "link": "http://Material1.com",
+        "location" : "Wellington",
+        "link": "http://devacademy.co.nz/",
         "logo": {
                 "full": "http://placehold.it/100x100",
                 "thumb": "http://placehold.it/50x50"
             },
         "tags": [
-         {
-            "tag": "Web Devlopment"
-         },
-         {
-            "tag": "Full Stack Devlopment"
-         }
-         ],
-      "reviews": [{
-        "stars": 5,
-        "body": "I love this gem!",
-        "author": "joe@example.org",
-        "createdOn": 1424802600000
-      }, {
-        "stars": 1,
-        "body": "This gem sucks.",
-        "author": "tim@example.org",
-         "createdOn": 1424802600000
-      }]
-    },
-    {
-        "id": "2",
-        "name": "Code Academy",
-        "description": "Code Academy about them",
-        "free": "free",
-        "type": "Self Directed Learning",
-        "link": "http://Material2.com",
-        "logo": {
-                "full": "http://placehold.it/100x100",
-                "thumb": "http://placehold.it/50x50"
-            },
-        "tags": [
-         {
-            "tag": "JAVA"
-         },
          {
             "tag": ".NET"
+         },
+         {
+            "tag": "ruby"
          }
          ],
       "reviews": [{
         "stars": 5,
-        "body": "I love this gem!",
-        "author": "joe@example.org",
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
         "createdOn": 1424802600000
       }, {
-        "stars": 1,
-        "body": "This gem sucks.",
-        "author": "tim@example.org",
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
          "createdOn": 1424802600000
       }]
     },
     {
-        "id": "3",
-        "name": "Dev Academy",
-        "description": "Dev Academy and abt them",
+        "id" : "2",
+        "name": "UXGym",
+        "description": "Tools & Resources for UX Technology Designers",
         "free": "buy",
         "type": "Instructor led Learning",
-        "link": "http://Material3.com",
+        "location": "Auckland, Wellington",
+        "link": "http://uxgym.com/",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+        "tags": [
+         {
+            "tag": "Usability"
+         },
+         {
+            "tag": "UX Designers"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "3",
+        "name": "Agile PM",
+        "description": "Four day foundation and practitioner course in Agile Project Management",
+        "free": "buy",
+        "type": "Instructor led Learning",
+        "location": "Auckland, Wellington",
+        "link": "http://www.alctraining.co.nz/course/agile-project-management/course-overview/",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "Agile"
+         },
+         {
+            "tag": "Project Management"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "4",
+        "name": "Software ED",
+        "description": "Tools and techniques to help develop IT products",
+        "free": "buy",
+        "type": "Instructor led Learning",
+        "location": "Auckland, Wellington",
+        "link": "http://www.softed.co.nz/",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "Agile"
+         },
+         {
+            "tag": "Project Management"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "5",
+        "name": "Rails Girls",
+        "description": "Aim to give tools and a community for women to understand technology",
+        "free": "free",
+        "type": "meetup",
+        "link": "http://railsgirls.com/wellington",
+        "location": "Auckland, Wellington",
         "logo": {
                 "full": "http://placehold.it/100x100",
                 "thumb": "http://placehold.it/50x50"
@@ -75,20 +142,575 @@
             "tags": [
          {
             "tag": "ruby"
-         },
-         {
-            "tag": ".NET"
          }
          ],
       "reviews": [{
         "stars": 5,
-        "body": "I love this gem!",
-        "author": "joe@example.org",
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
         "createdOn": 1424802600000
       }, {
-        "stars": 1,
-        "body": "This gem sucks.",
-        "author": "tim@example.org",
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "6",
+        "name": "Equinox",
+        "description": "Software development, consulting and training services",
+        "free": "buy",
+        "type": "Instructor Led",
+        "link": "https://training.equinox.co.nz/course-catalogue/5-business-analysis",
+        "location": "Auckland, Wellington",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "Business Analysis"
+         },
+         {
+            "tag": "Agile"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "7",
+        "name": "Soft Ed",
+        "description": "Software Development Life-Cycle training",
+        "free": "buy",
+        "type": "Instructor Led",
+        "link": "http://www.softed.co.nz/",
+        "location": "Auckland, Wellington",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "Buisiness Software Development"
+         },
+         {
+            "tag": "Software Development"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "8",
+        "name": "Vision College",
+        "description": "Specialised industry based computer courses at diploma levels",
+        "free": "buy",
+        "type": "Instructor Led",
+        "link": "http://visioncollege.ac.nz/courses/information-communication-technology/",
+        "location": "Auckland, Wellington,International",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "Software Development"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "9",
+        "name": "IT training in Auckland City",
+        "description": "IT Training Institute CompTIA, Cisco, Microsoft and LP Certificates in Auckland City",
+        "free": "buy",
+        "type": "Instructor Led",
+        "link": "http://www.itti.ac.nz/it-courses/",
+        "location": "Auckland",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "IT Certificates"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "10",
+        "name": "IT training in Auckland City",
+        "description": "IT Training Institute CompTIA, Cisco, Microsoft and LP Certificates in Auckland City",
+        "free": "buy",
+        "type": "Instructor Led",
+        "link": "http://www.itti.ac.nz/it-courses/",
+        "location": "Auckland",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "IT Certificates"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "10",
+        "name": "General Assembly",
+        "description": "Technology, design, and business skills",
+        "free": "buy",
+        "type": "Distance Learning",
+        "link": "https://generalassemb.ly/education?where=online",
+        "location": "On Line, International",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "Wed Design"
+         },
+         {
+            "tag": "Data Analysis"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "11",
+        "name": "Soft Ed",
+        "description": "eLearning of Agile, Business Analysis and Software Testing",
+        "free": "buy",
+        "type": "Distance Learning",
+        "link": "http://www.softed.co.nz/nz/courses/category/elearning",
+        "location": "On Line, International",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "Business Analysis"
+         },
+         {
+            "tag":"Software Testing"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "12",
+        "name": "Auckland meetups",
+        "description": "100x Groups within 10k of Auckland.  ALL topics !",
+        "free": "free",
+        "type": "Distance Learning",
+        "link": "http://www.meetup.com/find/tech/?allMeetups=false&radius=10&userFreeform=Auckland%2C+New+Zealand&mcName=Auckland%2C+NZ&lat=-36.85&lon=174.76&sort=recommended&eventFilter=mysugg",
+        "location": "Auckland",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "everything"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "13",
+        "name": "Wellington meetups",
+        "description": "100x Groups within 10k of Wellington.  ALL topics !",
+        "free": "free",
+        "type": "Distance Learning",
+        "link": "http://www.meetup.com/find/tech/?allMeetups=false&radius=10&userFreeform=wellington&mcId=c1030756&sort=recommended&eventFilter=mysugg",
+        "location": "Wellington",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "everything"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "14",
+        "name": "Future Learn",
+        "description": "On Line Coding skills, IT and programming courses from leading universities",
+        "free": "free",
+        "type": "Self Directed Learning (MOOC)",
+        "link": "https://www.futurelearn.com",
+        "location": "online",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "Generaal IT"
+         },
+         {
+            "tag": "coding skills"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "15",
+        "name": "Coursera",
+        "description": "4 General courses: Information, Tech & Design",
+        "free": "free",
+        "type": "Self Directed Learning (MOOC)",
+        "link": "https://www.coursera.org/",
+        "location": "online",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "Generaal IT"
+         },
+         {
+            "tag": "coding skills"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "16",
+        "name": "Udacity",
+        "description": "4 General courses: Information, Tech & Design",
+        "free": "free",
+        "type": "Self Directed Learning (MOOC)",
+        "link": "https://www.coursera.org/",
+        "location": "online",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+         {
+            "tag": "Generaal IT"
+         },
+         {
+            "tag": "coding skills"
+         }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "17",
+        "name": "Udemy",
+        "description": "17 On Line Programming languages, IT, Project Dev, Testing",
+        "free": "free",
+        "type": "Self Directed Learning (MOOC)",
+        "link": "https://www.udemy.com/",
+        "location": "online",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+             {
+                "tag": "Software Development"
+             },
+             {
+                "tag": "Web Design"
+             }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "18",
+        "name": "Code School",
+        "description": "Browser video lessons, coding challenges, and screencasts.",
+        "free": "free",
+        "type": "Self Directed Learning (MOOC)",
+        "link": "https://www.codeschool.com/",
+        "location": "online",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+             {
+                "tag": "Web Development"
+             },
+             {
+                "tag": "UX Design"
+             }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "19",
+        "name": "EdX",
+        "description": "Verified Educational Courses 2ndry and up",
+        "free": "free",
+        "type": "Self Directed Learning (MOOC)",
+        "link": "https://www.edx.org/course",
+        "location": "online",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+             {
+                "tag": "Programming"
+             },
+             {
+                "tag": "Education"
+             }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "20",
+        "name": "Resrc",
+        "description": "Indexing and gathering all freely available learning resources.",
+        "free": "free",
+        "type": "Self Directed Learning (MOOC)",
+        "link": "http://resrc.io/",
+        "location": "online",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+             {
+                "tag": "everything"
+             }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "21",
+        "name": "Creative Live",
+        "description": "Live creative classes on line Photography, presentation, lighting",
+        "free": "free",
+        "type": "Self Directed Learning (MOOC)",
+        "link": "https://www.creativelive.com",
+        "location": "online",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+             {
+                "tag": "Photography"
+             },
+             {
+                "tag": "Education"
+             }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
+         "createdOn": 1424802600000
+      }]
+    },
+    {
+        "id" : "22",
+        "name": "Skill Share",
+        "description": "Self Paced On Line - Off Line Synched 1 hour session",
+        "free": "free",
+        "type": "Self Directed Learning (MOOC)",
+        "link": "http://www.skillshare.com/classes/technology",
+        "location": "online",
+        "logo": {
+                "full": "http://placehold.it/100x100",
+                "thumb": "http://placehold.it/50x50"
+            },
+            "tags": [
+             {
+                "tag": "Web Development"
+             },
+             {
+                "tag": "Mobile Development"
+             }
+         ],
+      "reviews": [{
+        "stars": 5,
+        "body": "I love this course. it rocks!!",
+        "author": "joe@xero.co.nz",
+        "createdOn": 1424802600000
+      }, {
+        "stars": 3,
+        "body": "This course was worth it.",
+        "author": "jim@trademe.co.nz",
          "createdOn": 1424802600000
       }]
     }
