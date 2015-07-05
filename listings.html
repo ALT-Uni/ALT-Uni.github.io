@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en" ng-app="dataStore">
 <head>
   <meta charset="utf-8">
@@ -11,21 +10,37 @@
   <link href="css/listings.css" rel="stylesheet">
   <script type="text/javascript" src="js/angular.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-1.8.2.js"></script>
+  <script type="text/javascript">
+    function toggle_visibility(id, toggleid) {
+       var e = document.getElementById(id);
+       var i = document.getElementById(toggleid);
+       console.log(id);
+       if(e.style.display == 'block') {
+          i.style.display = 'none';
+          e.style.display = 'block';
+       } else{
+          e.style.display = 'block';
+          i.style.display = 'none';
+        }
+    }
+  </script>
 </head>
 <body ng-controller="StoreController as store">
 <nav>
-  <ul id="menu">
-    <a href=""><li id="menu_tab">LOGIN</li></a>
-    <a href=""><li id="menu_tab">THE GAP</li></a>
-    <a href=""><li id="menu_tab">WORK</li></a>
-    <a href=""><li id="menu_tab">FIND COURSES</li></a>
-    <li id="navlogo_wrap"><img src="images/nav_logo.png" alt="logo" id="nav_logo"></li>
+    <ul id="menu">
+    <a href="#"><li id="menu_tab">LOGIN</li></a>
+    <a href="#"><li id="menu_tab">ABOUT</li></a>
+    <a href="infographic_page.html"><li id="menu_tab">THE GAP</li></a>
+    <a href="#"><li id="menu_tab">WORK</li></a>
+    <a href="listings.html"><li id="menu_tab">FIND COURSES</li></a>
+    <a href="index.html"><li id="navlogo_wrap"><img src="images/nav_logo.png" alt="logo" id="nav_logo"></li></a>
   </ul>
 </nav>
   <div id="Header">
     <div id="Header_block_desc">
       <div id="Header_title">LEARN ON YOUR OWN TERMS.</div>
-      <div id="header_description">This page acts as a directory for onlinr and location-based courses that you have access to. Some cost money, others are free, but thay're all well worth a look at. Looking for a particular coding language. course type, or project? Try out the search to try to filter your options.<p><p>Know a course we should include? Tell us about it.</div>
+      <div id="header_description">This page acts as a directory for onlinr and location-based courses that you have access to. Some cost money, others are free, but thay're all well worth a look at. Looking for a particular coding language. course type, or project? Try out the search to try to filter your options.<p><p>Know a course we should include? <span class='underline'>Tell us about it.</span></div>
       <form><input type="text" name="sherch_input" id="text_serch" autofocus id="search" ng-model="query" ></form>  
     </div>
   </div>
@@ -41,14 +56,42 @@
     </ul>
   </div>
   <div id="results">
-<!--Result container one -->  
+<!--Result container one 
+-->  
     <div class="results_container" ng-repeat="material in store.materials | filter:query">
       <div id="colum_left">
         <div id="result_image">
-          <div id="result_price_idea">FREE</div>
-          <div id="result_image_wrapper">
-            <img ng-src="{{material.logo.thumb}}"/>
+          <div id="result_upstairs{{material.id}}" class="result_upstairs">
+            <div id="result_price_idea">{{material.free}}</div>
+            <div id="result_image_wrapper">
+              <img ng-src="{{material.logo.thumb}}" class="thumb" />
+            </div>
           </div>
+            <div id="reveiw_list{{material.id}}" class="reveiw_list">
+              <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(material)" novalidate >
+          <!--  Live Preview 
+                  <strong>{{reviewCtrl.review.stars}} Stars</strong>
+                    {{reviewCtrl.review.body}}
+                  <cite class="clearfix">—{{reviewCtrl.review.author}}</cite>
+          <!--  Review Form -->
+                <h4>Submit a Review</h4>
+                <fieldset class="form-group">
+                  <select ng-model="reviewCtrl.review.stars" class="form-control" ng-options ="stars for stars in [5,4,3,2,1]" title="Stars" required >
+                    <option vlaue="">Rate the Product</option>
+                  </select>
+                </fieldset>
+                <fieldset class="form-group">
+                  <textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="write a short review of the product..." title="Review" required></textarea>
+                </fieldset>
+                <fieldset class="form-group">
+                  <input ng-model="reviewCtrl.review.author" type="email" class="form-control" placeholder="gaurav@example.org" title="Email" required/>
+                </fieldset>
+                <!--<div>reviewForm is {{reviewForm.$valid}}</div>-->
+                <fieldset class="form-group" style="margin-bottom:none;">
+                  <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
+                </fieldset>
+              </form>
+            </div>
           <div id="downstairs">
             <div id="stars">
               <img class="stars" src="images/FullStar-05.png">
@@ -57,25 +100,27 @@
               <img class="stars" src="images/FullStar-05.png">
               <img class="stars" src="images/FullStar-05.png">
             </div>
-            <div id="reviews">10 reviews <img class="arrow_reveiw" src="images/ThinArrow-07.png"></div>
+            <div id="reviews" onclick="toggle_visibility('reveiw_list{{material.id}}', 'result_upstairs{{material.id}} ' );">10 reviews <img class="arrow_reveiw" src="images/ThinArrow-07.png"></div>
           </div>
         </div>
       </div>
       <div id="colum_right">
+      <div id="orginal_box">
         <div id="upstairs_right_side">
           <div id="love_me_hart_result"><img alt="add to favs" class="haert" src="images/LineHeart-09.png"></div>
-          <div id="result_title">COODE ACADEMY</div>
-          <div id="result_description">Course description</div>
+          <div id="result_title">{{material.name}}</div>
+          <div id="result_description">{{material.description}}</div>
         </div>
         <div id="downstairs_left_side">
           <div id="result_favorits">25 Favourites</div>
-          <div id="tags">
+          <div id="tags" ng-repeat="tag in material.tags">
+            <div class="circal_tag">{{tag.tag}}</div>
             <div class="square_tag">Self-directed</div>
             <div class="square_tag">Free</div>
-            <div class="circal_tag">coding</div>
-            <div class="circal_tag">Web Development</div>
-            <div class="circal_tag">IOS Development</div>
+            <!--<div class="circal_tag">Web Development</div>
+            <div class="circal_tag">IOS Development</div>-->
           </div>
+        </div>
         </div>
       </div>
     </div>

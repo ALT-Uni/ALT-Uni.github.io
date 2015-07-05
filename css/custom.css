@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: opensansbold;
-    src: url(../fonts/OpenSans-Bold.ttf);
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
 }
 
 body {
@@ -71,6 +71,9 @@ li#menu_tab {
 	float: left;
 	margin-top: 10px;
 }
+.underline {
+	text-decoration: underline;
+}
 
 
 /*===================
@@ -82,7 +85,7 @@ header
 	width: 100%;
 	padding: 70px;
 	background: url("../images/HeaderImage-04.png") #F7A119;
-	background-size: 1900px 900px;
+	background-size: 1900px 708px;
 	height: 700px; /*remove when done*/
 }
 
@@ -246,6 +249,26 @@ Cotainer 3
 	color: #666666;
 }
 
+.grey_tag {
+	color: #666666;
+}
+
+#img1_circl {
+	background: url('../images/FutureLearnLogo 170.png');
+}
+
+#img2_circl {
+	background: url('../images/Dev Academy 170.jpg');
+}
+
+#img3_circl {
+	background: url('../images/udemy 170.jpg');	
+}
+
+#img4_circl {
+	background: url('../images/UX Gym 170.jpg');	
+}
+
 /*===================
 Cotainer 4
 ===================*/
@@ -268,7 +291,9 @@ Cotainer 4
 
 .work_contanier_title {
 	color: #febe10;
-	font-size: 55px;
+	font-weight: 900;
+	font-size: 40px;
+	font-family: opensansbold;
 }
 
 .work_contanier_subtitle {
@@ -302,7 +327,9 @@ Cotainer 4
 
 .business_contanier_title {
 	color: #febe10;
-	font-size: 55px;
+	font-weight: 900;
+	font-size: 40px;
+	font-family: opensansbold;
 }
 
 .business_contanier_subtitle {
@@ -316,7 +343,7 @@ Cotainer 4
 }
 
 .button_contanier_4_2 {
-	width: 300px;
+	width: 320px;
 	height: 50px;
 	background: #f7a219;
 	margin-top: 20px;
