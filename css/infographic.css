@@ -136,20 +136,21 @@ Cotainer 2
 ===================*/
 
 #container_2 {
-	padding: 50px;
+	padding: 169px;
 	padding-top: 80px;
 }
 
 #box {
-	width: 550px;
+	width: 600px;
 	height: 500px;
 	display: inline-block;
 }
 
 #box_graph {
-	width: 650px;
+	width: 750px;
 	height: 500px;
 	display: inline-block;
+	margin-right: 70px;
 }
 
 #box_title {
@@ -162,6 +163,11 @@ Cotainer 2
 	font-size: 20px;
 }
 
+iframe {
+	border: none;
+
+}
+
 /*===================
 Cotainer 4
 ===================*/
@@ -171,6 +177,7 @@ footer {
 	padding-right: 169px;
 	padding-left: 169px;
 	padding-bottom: 60px;
+	font-size: 18px;
 }
 
 .footer_list {
@@ -179,7 +186,7 @@ footer {
 }
 
 .list_bold {
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 900;
 	margin-bottom: 10px;
 }
