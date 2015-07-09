@@ -1,3 +1,6 @@
+#### [GovHack2015Project] (https://hackerspace.govhack.org/content/fill-gap) 
+![GovHack 2015] (https://hackerspace.govhack.org/sites/default/files/govhack_logo.png)  
+-------------------------------
 
 ![ICON] (/images/nav_logo.png)  
 # [FILL THE GAP](http://alt-uni.github.io/) 
@@ -35,10 +38,6 @@ ICT offers exciting career options. Technology is evolving all the time, which m
 
 Cheers!! :beer:
 
-
-
-![GovHack 2015] (https://hackerspace.govhack.org/sites/default/files/govhack_logo.png)  
-## [GovHack2015](https://hackerspace.govhack.org/content/fill-gap) 
 
 
 
