@@ -38,6 +38,13 @@ ICT offers exciting career options. Technology is evolving all the time, which m
 
 Cheers!! :beer:
 
+-----------------
+Below are the visual designs for the website.
+-----------------
+![HomePage] (visual_design/FTG_Landingv2.png)
+![CourseListingPage] (visual_design/FTG_Listingsv1.png)
+![UserPersona] (visual_design/userPersona.png)
+
 
 
 
