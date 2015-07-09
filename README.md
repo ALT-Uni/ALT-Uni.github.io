@@ -1,4 +1,6 @@
-# [FILL THE GAP](http://alt-uni.github.io/)
+
+![ICON] (/images/nav_logo.png)  
+# [FILL THE GAP](http://alt-uni.github.io/) 
 
 #### Learn your way.
 #### Have Fun.
@@ -32,6 +34,11 @@ ICT offers exciting career options. Technology is evolving all the time, which m
 > If you like our ideas, please support our genuine cause by improving the functionality of the site and keeping the  course listing upto date.
 
 Cheers!! :beer:
+
+
+
+![GovHack 2015] (https://hackerspace.govhack.org/sites/default/files/govhack_logo.png)  
+## [GovHack2015](https://hackerspace.govhack.org/content/fill-gap) 
 
 
 
